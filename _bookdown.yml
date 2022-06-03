@@ -1,0 +1,10 @@
+book_filename: DataTidyACSRISK6
+delete_merged_file: yes
+language:
+  ui:
+    chapter_name: 'Chapter '
+rmd_files: 
+- index.Rmd
+- data_tidy_risk6.Rmd
+- rmd/appendix.Rmd
+output_dir: docs/DataTidyACSRISK6V1

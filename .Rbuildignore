@@ -1,0 +1,6 @@
+^templater\.Rproj$
+^\.Rproj\.user$
+^cache
+^output
+^docs
+^LICENSE\.md$

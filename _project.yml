@@ -1,0 +1,3 @@
+directories:
+  dir_cache: cache
+  dir_output: output
