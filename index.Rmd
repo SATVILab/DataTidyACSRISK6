@@ -1,15 +1,15 @@
 --- 
-title: "Solving TB with MINIMALLY SENSIBLE reports"
-author: "Sir so and so"
+title: "DataTidyACSRISK6"
+author: "Miguel Rodo"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 # bibliography: [book.bib, packages.bib]
-description: "Bubble bubble, toil and trouble, a good report made on the double. Eye of newt and spleen of toad..."
+description: "Make ACS RISK6 data available"
 ---
 
 # Introduction
   
-```{r , include = FALSE}
+The goal of DataTidyACSRISK6 is to make the ACS RISK6 data available.
 
-```
+The processing is actually performed in `FredHutch/TuberculomicsCompendium`, but that package is at present restricted to Tuberculomics members and so we make available the RISK6 dataset from there here for in-SATVI use.

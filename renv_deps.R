@@ -1,0 +1,6 @@
+library(yaml)
+library(gitcreds)
+library(edgeR)
+library(limma)
+library(DataPackageR)
+library(TuberculomicsCompendium)
