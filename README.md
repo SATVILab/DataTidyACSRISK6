@@ -20,6 +20,8 @@ remotes::install_github("SATVILab/DataTidyACSRISK6")
 |:---------------|:----------------|
 |data_tidy_risk6 |ACS RISK6 scores |
 
+Run `?DataTidyACSRISK6::data_tidy_risk6` for documentation. 
+
 ## Project structure
 
-The data are processed using `Rmd` files inside `data-raw/`.
+The data are processed using `rmd/data_tidy_risk6.Rmd`. The data, in `rda` and `csv` formates, are saved to `output/`, as well as a package tarball.

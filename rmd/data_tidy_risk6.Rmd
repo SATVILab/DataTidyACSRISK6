@@ -1,0 +1,29 @@
+# DataTidyACSRISK6
+
+```{r , include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+  
+Save `signature_6gene.rds` from `TuberculomicsCompendium` if it is not available. This is the full ACS risk6Logic data set for the ACS, including all variables.
+
+```{r }
+dir_output <- here::here(dir_output)
+data_tidy_risk6 <- TuberculomicsCompendium::signature_6gene |>
+  tibble::as_tibble() |>
+  dplyr::rename(risk6 = sig6gene_CorScore)
+if (!requireNamespace("usethis", quietly = TRUE)) {
+  utils::install.packages("usethis", quiet = TRUE)
+}
+usethis::use_data(data_tidy_risk6, overwrite = TRUE)
+if (file.exists(file.path(dir_output, "data_tidy_risk6.csv"))) {
+  unlink(file.path(dir_output, "data_tidy_risk6.csv"))
+}
+readr::write_csv(
+  data_tidy_risk6,
+  file = file.path(dir_output, "data_tidy_risk6.csv")
+)
+invisible(file.copy(
+  from = "data/data_tidy_risk6.rda",
+  to = file.path(dir_output, "data_tidy_risk6.rda")
+))
+```
